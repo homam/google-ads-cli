@@ -4,13 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "babel-node --extensions \".ts\" ./src/index.ts"
+    "test": "babel-node --extensions \".ts,.js\" ./src/index.ts",
+    "test-db": "babel-node --extensions \".ts,.js\" ./src/db.ts",
+    "test-r": "nodemon --exec babel-node --extensions \".ts,.js\" ./src/test.js",
+    "test-google": "babel-node --extensions \".ts,.js\" ./src/google_api.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "google-ads-api": "^3.6.0"
+    "google-ads-api": "^3.6.0",
+    "pg": "^8.0.2",
+    "pg-promise": "^10.5.1",
+    "ramda": "^0.27.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -20,6 +26,8 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.9.5",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-typescript": "^7.9.0",
+    "@types/pg": "^7.14.3",
+    "@types/pg-promise": "^5.4.3",
     "nodemon": "^2.0.3",
     "typescript": "^3.8.3"
   }
