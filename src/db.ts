@@ -1,6 +1,6 @@
 import * as pgp from 'pg-promise'
 import { clean_merge } from './clean_merge'
-import { GoogleAdsDetailPlacement } from './google_api'
+import { GoogleAdsDetailPlacement } from './google-api/detail_placement_view'
 const db = pgp.default()(process.env.sigma_connection_string as string)
 
 export type DBGoogleAdsDetailPlacement = {

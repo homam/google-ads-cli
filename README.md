@@ -1,3 +1,11 @@
+## Usage
+
+```
+yarn start
+yarn start -- clients --filter ES
+yarn start -- campaigns --client-id 2944916627
+yarn start -- import placements -client-id 2944916627
+```
 
 ## .env file:
 ```
@@ -23,6 +31,8 @@ sigma_connection_string=
 
 
 ----
+
+## My notes for Later Use
 
 Example adding and removing a negative placement
 
