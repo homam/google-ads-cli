@@ -2,9 +2,9 @@
 
 ```
 yarn start
-yarn start -- clients --filter ES
-yarn start -- campaigns --client-id 2944916627
-yarn start -- import placements -client-id 2944916627
+yarn start clients --filter ES
+yarn start campaigns --client-id 2944916627
+yarn start import placements -client-id 2944916627
 ```
 
 ## .env file:
@@ -27,6 +27,9 @@ customer_account_id=
 
 # Needs write access to sigma db
 sigma_connection_string=
+
+# Redshift connection string
+redshift_connection_string=
 ```
 
 

@@ -7,7 +7,7 @@
     "start": "babel-node --extensions \".ts,.js\" ./src/index.ts",
     "test": "babel-node --extensions \".ts,.js\" ./src/index.ts",
     "test-db": "babel-node --extensions \".ts,.js\" ./src/db.ts",
-    "test-r": "nodemon --exec babel-node --extensions \".ts,.js\" ./src/test.js",
+    "test-r": "nodemon --exec babel-node --extensions \".ts,.js\" ./src/test.ts",
     "test-google": "babel-node --extensions \".ts,.js\" ./src/google_api.ts"
   },
   "author": "",
@@ -16,7 +16,7 @@
     "@types/yargs": "^15.0.4",
     "columnify": "^1.5.4",
     "dotenv": "^8.2.0",
-    "google-ads-api": "^3.6.0",
+    "google-ads-api": "^3.6.1",
     "pg": "^8.0.2",
     "pg-promise": "^10.5.1",
     "ramda": "^0.27.0",
