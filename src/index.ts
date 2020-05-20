@@ -116,7 +116,7 @@ async function main() {
 
 }
 
-main().then(console.log).catch(console.error)
+main().then(() => {}).catch(console.error)
 
 async function import_data(import_what: string, customer_id: number) {
   switch (import_what) {
@@ -146,7 +146,9 @@ async function render_campaigns(client_id: number) {
     active: getEnumKeyByEnumValue(CampaignStatus, c.status as number),
     bidding_strategy_type: getEnumKeyByEnumValue(BiddingStrategyType, c.bidding_strategy_type as number),
     frequency_caps: (c.frequency_caps?.length || 0) === 0 ? 'None' : 'Some',
-  }))))
+  })), {
+      // maxWidth: 30
+  }))
 }
 
 async function render_clients() {
